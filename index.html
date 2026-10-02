@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="PhiSci 2027: a proposed ICLR workshop on physics-inspired AI for scientific discovery, from molecules to materials.">
+  <meta name="theme-color" content="#111111">
+  <title>PhiSci 2027 | Physics-Inspired AI for Scientific Discovery</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" data-header>
+    <a class="brand" href="#top" aria-label="PhiSci 2027 home">
+      <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+      <span>PhiSci<span class="brand-year">/27</span></span>
+    </a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-menu>
+      <span></span><span></span>
+      <span class="sr-only">Toggle navigation</span>
+    </button>
+    <nav id="site-nav" class="site-nav" data-nav aria-label="Primary navigation">
+      <a href="#about">About</a>
+      <a href="#themes">Themes</a>
+      <a href="#program">Program</a>
+      <a class="nav-cta" href="#participate">Get updates</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <canvas class="hero-canvas" data-science-canvas aria-hidden="true"></canvas>
+      <div class="hero-noise" aria-hidden="true"></div>
+      <div class="hero-content">
+        <p class="eyebrow"><span>Proposed ICLR 2027 Workshop</span><span>Date + location TBA</span></p>
+        <h1 id="hero-title">Physics-Inspired AI<br>for Scientific Discovery</h1>
+        <div class="hero-bottom">
+          <p class="hero-subtitle">From molecules to materials, we ask how AI can scale without losing the physical structure that makes scientific prediction reliable.</p>
+          <a class="round-link" href="#about" aria-label="Explore the workshop">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v16M5 13l7 7 7-7"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="hero-index" aria-hidden="true">Φ</div>
+    </section>
+
+    <section class="thesis section" id="about">
+      <div class="section-kicker">01 / The premise</div>
+      <div class="thesis-grid">
+        <h2>What should AI <em>learn</em>, and what should physics <em>guarantee</em>?</h2>
+        <div class="thesis-copy">
+          <p>Scientific AI is entering the foundation-model era. Yet molecules and materials must obey symmetries, conservation laws, energetic stability, and constraints that scale alone may not recover.</p>
+          <p>PhiSci brings together machine learning, chemistry, physics, and materials science to examine where physical structure belongs in the next generation of scientific models.</p>
+        </div>
+      </div>
+      <div class="scale-line" aria-hidden="true">
+        <span>Molecules</span><i></i><b></b><i></i><b></b><i></i><span>Materials</span>
+      </div>
+    </section>
+
+    <section class="themes section" id="themes" aria-labelledby="themes-title">
+      <div class="section-heading">
+        <div class="section-kicker light">02 / Core questions</div>
+        <h2 id="themes-title">Three tensions.<br>One shared frontier.</h2>
+      </div>
+      <div class="theme-list">
+        <article class="theme" data-theme>
+          <div class="theme-number">01</div>
+          <div class="theme-body">
+            <p class="theme-tag">Structure × Scale</p>
+            <h3>Physical inductive bias under data scarcity</h3>
+            <p>Which priors should be hard-coded, softly encouraged, or learned from data? How does that balance change as datasets and models grow?</p>
+            <ul>
+              <li>Equivariance + symmetry</li>
+              <li>Conservation laws</li>
+              <li>Governing equations</li>
+            </ul>
+          </div>
+          <div class="theme-glyph glyph-orbit" aria-hidden="true"><i></i><i></i><i></i></div>
+        </article>
+        <article class="theme" data-theme>
+          <div class="theme-number">02</div>
+          <div class="theme-body">
+            <p class="theme-tag">Plausible × Physical</p>
+            <h3>Validity beyond distributional fidelity</h3>
+            <p>A generated structure can look right and still be unstable. What should count as physically meaningful across molecules and materials?</p>
+            <ul>
+              <li>Energetic stability</li>
+              <li>Dynamics + uncertainty</li>
+              <li>Simulation + experiment</li>
+            </ul>
+          </div>
+          <div class="theme-glyph glyph-wave" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+        </article>
+        <article class="theme" data-theme>
+          <div class="theme-number">03</div>
+          <div class="theme-body">
+            <p class="theme-tag">Domains × Scales</p>
+            <h3>Unified physical representations</h3>
+            <p>Can common geometric and physical knowledge transfer across biomolecules, crystals, disordered matter, and continuum descriptions?</p>
+            <ul>
+              <li>Cross-domain transfer</li>
+              <li>Multiscale learning</li>
+              <li>Foundation models</li>
+            </ul>
+          </div>
+          <div class="theme-glyph glyph-grid" aria-hidden="true"></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="statement section">
+      <p class="statement-label">The question behind PhiSci</p>
+      <blockquote>How should physics-inspired learning evolve, rather than disappear, as scientific AI enters the foundation-model regime?</blockquote>
+    </section>
+
+    <section class="program section" id="program" aria-labelledby="program-title">
+      <div class="section-kicker">03 / Workshop format</div>
+      <div class="program-grid">
+        <div>
+          <h2 id="program-title">A day built for exchange.</h2>
+          <p>Invited perspectives, contributed work, and a cross-disciplinary panel will connect methods to the scientific questions they must answer.</p>
+        </div>
+        <ol class="program-list">
+          <li><span>01</span><strong>Invited talks</strong><small>Leading voices across AI and the physical sciences</small></li>
+          <li><span>02</span><strong>Contributed work</strong><small>Oral and poster presentations selected through peer review</small></li>
+          <li><span>03</span><strong>Panel discussion</strong><small>A candid debate on inductive bias, scaling, and validation</small></li>
+          <li><span>04</span><strong>Community exchange</strong><small>Space to connect across disciplinary boundaries</small></li>
+        </ol>
+      </div>
+      <div class="pending-note"><span>Program, speakers, and submission details</span><strong>Coming soon</strong></div>
+    </section>
+
+    <section class="participate section" id="participate" aria-labelledby="participate-title">
+      <div class="participate-mark" aria-hidden="true">Φ</div>
+      <p class="section-kicker light">04 / Join the conversation</p>
+      <h2 id="participate-title">Help shape a more physical future for scientific AI.</h2>
+      <p>We are preparing the call for papers and full workshop program. Follow this page for updates as the proposal develops.</p>
+      <a class="primary-link" href="https://github.com/phisci27" target="_blank" rel="noreferrer">
+        <span>Follow PhiSci on GitHub</span>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand footer-brand" href="#top"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span><span>PhiSci<span class="brand-year">/27</span></span></a>
+    <p>Physics-Inspired AI for Scientific Discovery<br>From Molecules to Materials</p>
+    <p class="footer-meta">Proposed ICLR 2027 Workshop<br><span data-year></span> PhiSci</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
