@@ -2,9 +2,9 @@
   --ink: #111111;
   --paper: #f5f4ef;
   --white: #ffffff;
-  --acid: #d8ff3e;
-  --coral: #ff684d;
-  --cyan: #4ce2e8;
+  --acid: rgba(216, 255, 62, 0.75);
+  --coral: rgba(255, 104, 77, 0.75);
+  --cyan: rgba(76, 226, 232, 0.75);
   --muted: #7a7a72;
   --line: rgba(17, 17, 17, 0.18);
   --gutter: clamp(20px, 4.5vw, 72px);

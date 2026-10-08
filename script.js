@@ -30,7 +30,7 @@ let width = 0;
 let height = 0;
 let pixelRatio = 1;
 
-const palette = ['#d8ff3e', '#ff684d', '#4ce2e8', '#ffffff'];
+const palette = ['rgba(216,255,62,.75)', 'rgba(255,104,77,.75)', 'rgba(76,226,232,.75)', '#ffffff'];
 
 function resizeCanvas() {
   const rect = canvas.getBoundingClientRect();
