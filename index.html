@@ -29,7 +29,7 @@
       <a href="#people">Speakers &amp; Panelists</a>
       <a href="#panel">Panel</a>
       <a href="#schedule">Schedule</a>
-      <a class="nav-cta" href="#participate">Get updates</a>
+      <a class="nav-cta" href="#cfp">Call for papers</a>
     </nav>
   </header>
 
@@ -38,10 +38,10 @@
       <canvas class="hero-canvas" data-science-canvas aria-hidden="true"></canvas>
       <div class="hero-noise" aria-hidden="true"></div>
       <div class="hero-content">
-        <p class="eyebrow"><span>Proposed ICLR 2027 Workshop</span><span>Date + location TBA</span></p>
+        <p class="eyebrow"><span>Proposed ICLR 2027 Workshop</span><span>San Francisco, CA &bull; April 29/30, 2027</span></p>
         <h1 id="hero-title">Physics-Inspired AI<br>for Scientific Discovery</h1>
         <div class="hero-bottom">
-          <p class="hero-subtitle">From molecules to materials, we ask how AI can scale without losing the physical structure that makes scientific prediction reliable.</p>
+          <p class="hero-subtitle">As AI for molecules and materials scales, where should physical knowledge enter learning: in the architecture, as the training signal, or through experiment?</p>
           <a class="round-link" href="#about" aria-label="Explore the workshop">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v16M5 13l7 7 7-7"/></svg>
           </a>
@@ -53,33 +53,33 @@
     <section class="thesis section" id="about">
       <div class="section-kicker">01 / The premise</div>
       <div class="thesis-grid">
-        <h2>What should AI <em>learn</em>, and what should physics <em>guarantee</em>?</h2>
+        <h2>Where should physical knowledge <em>enter</em> learning?</h2>
         <div class="thesis-copy">
-          <p>Scientific AI is entering the foundation-model era. Yet molecules and materials must obey symmetries, conservation laws, energetic stability, and constraints that scale alone may not recover.</p>
-          <p>PhiSci brings together machine learning, chemistry, physics, and materials science to examine where physical structure belongs in the next generation of scientific models.</p>
+          <p>Foundation models are moving the bottleneck beyond static labels. What remains scarce are correct ensembles, rare events, accuracy beyond the underlying theory, and agreement with sparse or indirect measurements.</p>
+          <p>PhiSci asks how physical knowledge should shape representations, supply learning objectives, and connect scientific models to experimental ground truth.</p>
         </div>
       </div>
-      <div class="scale-line" aria-hidden="true">
-        <span>Molecules</span><i></i><b></b><i></i><b></b><i></i><span>Materials</span>
+      <div class="entry-points" aria-label="Three entry points for physical knowledge">
+        <span>1 / Architecture</span><span>2 / Training signal</span><span>3 / Experiment</span>
       </div>
     </section>
 
     <section class="themes section" id="themes" aria-labelledby="themes-title">
       <div class="section-heading">
         <div class="section-kicker light">02 / Core questions</div>
-        <h2 id="themes-title">Three tensions.<br>One shared frontier.</h2>
+        <h2 id="themes-title">Three entry points.<br>One learning loop.</h2>
       </div>
       <div class="theme-list">
         <article class="theme" data-theme>
           <div class="theme-number">01</div>
           <div class="theme-body">
-            <p class="theme-tag">Structure × Scale</p>
-            <h3>Physical inductive bias under data scarcity</h3>
-            <p>Which priors should be hard-coded, softly encouraged, or learned from data? How does that balance change as datasets and models grow?</p>
+            <p class="theme-tag">Physics as architecture</p>
+            <h3>Which structure must be built in?</h3>
+            <p>When should symmetry, conservation, locality, and electronic structure be hard-coded, softly encouraged, or learned through augmentation and scale?</p>
             <ul>
               <li>Equivariance + symmetry</li>
-              <li>Conservation laws</li>
-              <li>Governing equations</li>
+              <li>Energies + forces</li>
+              <li>Electronic Hamiltonians</li>
             </ul>
           </div>
           <div class="theme-glyph glyph-orbit" aria-hidden="true"><i></i><i></i><i></i></div>
@@ -87,13 +87,13 @@
         <article class="theme" data-theme>
           <div class="theme-number">02</div>
           <div class="theme-body">
-            <p class="theme-tag">Plausible × Physical</p>
-            <h3>Validity beyond distributional fidelity</h3>
-            <p>A generated structure can look right and still be unstable. What should count as physically meaningful across molecules and materials?</p>
+            <p class="theme-tag">Physics as training signal</p>
+            <h3>Learning from energies and equations</h3>
+            <p>Can generative models learn from energy functions, forces, and self-consistency conditions rather than labeled simulation data?</p>
             <ul>
-              <li>Energetic stability</li>
-              <li>Dynamics + uncertainty</li>
-              <li>Simulation + experiment</li>
+              <li>Boltzmann sampling</li>
+              <li>Diffusion + control</li>
+              <li>Label-free objectives</li>
             </ul>
           </div>
           <div class="theme-glyph glyph-wave" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
@@ -101,13 +101,13 @@
         <article class="theme" data-theme>
           <div class="theme-number">03</div>
           <div class="theme-body">
-            <p class="theme-tag">Domains × Scales</p>
-            <h3>Unified physical representations</h3>
-            <p>Can common geometric and physical knowledge transfer across biomolecules, crystals, disordered matter, and continuum descriptions?</p>
+            <p class="theme-tag">Experiment as ground truth</p>
+            <h3>Aligning models with measurement</h3>
+            <p>How should models learn from sparse, noisy, indirect, or ensemble-averaged observables, especially when simulation and experiment disagree?</p>
             <ul>
-              <li>Cross-domain transfer</li>
-              <li>Multiscale learning</li>
-              <li>Foundation models</li>
+              <li>Data fusion</li>
+              <li>Inverse problems</li>
+              <li>Physical validity</li>
             </ul>
           </div>
           <div class="theme-glyph glyph-grid" aria-hidden="true"></div>
@@ -117,7 +117,7 @@
 
     <section class="statement section">
       <p class="statement-label">The question behind PhiSci</p>
-      <blockquote>How should physics-inspired learning evolve, rather than disappear, as scientific AI enters the foundation-model regime?</blockquote>
+      <blockquote>What should we build in, what should we optimize against, and what should scientific models align with?</blockquote>
     </section>
 
     <section class="people section" id="people" aria-labelledby="people-title">
@@ -126,16 +126,16 @@
         <div>
           <p class="status-label">Tentative</p>
           <h2 id="people-title">Speakers &amp; Panelists</h2>
-          <p>Perspectives spanning foundational machine learning, quantum chemistry, atomistic simulation, multiscale modeling, and scientific discovery.</p>
+          <p>Fifteen tentative invitees spanning foundational machine learning, electronic structure, atomistic simulation, generative sampling, experiment, and scientific discovery. Nine will give invited talks; several others will join the panel.</p>
         </div>
       </div>
       <div class="people-grid">
         <article class="person">
           <span class="person-index">01</span>
-          <h3>Heather J. Kulik</h3>
-          <p class="person-role">Professor of Chemical Engineering and Chemistry</p>
+          <h3>Tommi Jaakkola</h3>
+          <p class="person-role">Thomas Siebel Professor of EECS and IDSS</p>
           <p class="person-affiliation">MIT</p>
-          <p class="person-direction">Machine learning and electronic structure for transition-metal chemistry, catalysis, and functional materials.</p>
+          <p class="person-direction">Statistical inference, representation learning, molecular biology, and data-driven scientific discovery.</p>
         </article>
         <article class="person">
           <span class="person-index">02</span>
@@ -146,59 +146,94 @@
         </article>
         <article class="person">
           <span class="person-index">03</span>
-          <h3>Sungsoo Ahn</h3>
-          <p class="person-role">Assistant Professor, Kim Jaechul Graduate School of AI</p>
-          <p class="person-affiliation">KAIST</p>
-          <p class="person-direction">Probabilistic and generative learning, flow matching, diffusion, equivariance, and transition-path sampling.</p>
+          <h3>Heather J. Kulik</h3>
+          <p class="person-role">Lammot du Pont Professor of Chemical Engineering; Professor of Chemistry</p>
+          <p class="person-affiliation">MIT</p>
+          <p class="person-direction">Machine learning and electronic structure for transition-metal chemistry, catalysis, and functional materials.</p>
         </article>
         <article class="person">
           <span class="person-index">04</span>
-          <h3>Giannis Daras</h3>
-          <p class="person-role">Assistant Professor of Operations Research and Statistics</p>
-          <p class="person-affiliation">MIT Sloan School of Management</p>
-          <p class="person-direction">Deep generative models that learn from noisy, incomplete, or corrupted data, including Ambient Diffusion.</p>
+          <h3>Boris Kozinsky</h3>
+          <p class="person-role">Gordon McKay Professor; Professor of Chemistry and Chemical Biology; Principal Scientist</p>
+          <p class="person-affiliation">Harvard SEAS &amp; Bosch Research</p>
+          <p class="person-direction">Physics-informed atomistic modeling, interatomic potentials, active learning, transport, and phase transformations.</p>
         </article>
         <article class="person">
           <span class="person-index">05</span>
+          <h3>Sungsoo Ahn</h3>
+          <p class="person-role">Assistant Professor, Kim Jaechul Graduate School of AI</p>
+          <p class="person-affiliation">KAIST</p>
+          <p class="person-direction">Probabilistic and generative learning, Hamiltonian prediction, flow matching, diffusion, and transition paths.</p>
+        </article>
+        <article class="person">
+          <span class="person-index">06</span>
+          <h3>Giannis Daras</h3>
+          <p class="person-role">Assistant Professor of Operations Research and Statistics</p>
+          <p class="person-affiliation">MIT Sloan School of Management</p>
+          <p class="person-direction">Deep generative models that learn clean distributions from noisy, incomplete, or corrupted observations.</p>
+        </article>
+        <article class="person">
+          <span class="person-index">07</span>
           <h3>Lixue (Sherry) Cheng</h3>
           <p class="person-role">Assistant Professor of Chemistry and Chemical &amp; Biological Engineering</p>
           <p class="person-affiliation">HKUST</p>
           <p class="person-direction">Electronic structure, quantum chemistry and computing, and structured neural representations.</p>
         </article>
         <article class="person">
-          <span class="person-index">06</span>
+          <span class="person-index">08</span>
           <h3>Aditi S. Krishnapriyan</h3>
           <p class="person-role">Assistant Professor; Faculty Scientist</p>
           <p class="person-affiliation">UC Berkeley &amp; Lawrence Berkeley National Laboratory</p>
-          <p class="person-direction">Machine learning for natural science, atomistic simulation, distribution shift, and scientific foundation models.</p>
+          <p class="person-direction">Machine learning for natural science, atomistic simulation, generative modeling, distribution shift, and foundation models.</p>
         </article>
         <article class="person">
-          <span class="person-index">07</span>
+          <span class="person-index">09</span>
           <h3>Chenru Duan</h3>
-          <p class="person-role">Co-Founder and Chief Technology Officer</p>
+          <p class="person-role">Founder and Chief Technology Officer</p>
           <p class="person-affiliation">Deep Principle</p>
           <p class="person-direction">Computational chemistry and materials AI, transition states, equivariant generation, and autonomous discovery.</p>
         </article>
         <article class="person">
-          <span class="person-index">08</span>
+          <span class="person-index">10</span>
           <h3>Rafael G&oacute;mez-Bombarelli</h3>
-          <p class="person-role">Co-Founder and Chief Scientific Officer, Physical Sciences; Associate Professor</p>
+          <p class="person-role">Co-Founder and Chief Scientific Officer; Associate Professor of Materials Science and Engineering</p>
           <p class="person-affiliation">Lila Sciences &amp; MIT</p>
-          <p class="person-direction">Atomistic simulation, statistical mechanics, generative AI, and practical molecular and materials discovery.</p>
+          <p class="person-direction">Generative models, atomistic simulation, statistical mechanics, free energies, and simulation-experiment integration.</p>
         </article>
         <article class="person">
-          <span class="person-index">09</span>
+          <span class="person-index">11</span>
           <h3>Linfeng Zhang</h3>
           <p class="person-role">Founder &amp; Chief Scientist; Chairman</p>
           <p class="person-affiliation">DP Technology &amp; AI for Science Institute, Beijing</p>
           <p class="person-direction">Deep Potential, high-performance computing, and large-scale physically grounded atomistic simulation.</p>
         </article>
         <article class="person">
-          <span class="person-index">10</span>
+          <span class="person-index">12</span>
           <h3>Julija Zavadlav</h3>
           <p class="person-role">Associate Professor of Multiscale Modeling of Fluid Materials</p>
           <p class="person-affiliation">Technical University of Munich</p>
-          <p class="person-direction">Molecular simulation, multiscale modeling, Bayesian inference, and uncertainty quantification.</p>
+          <p class="person-direction">Molecular simulation, multiscale learning, Bayesian inference, uncertainty, and simulation-experiment data fusion.</p>
+        </article>
+        <article class="person">
+          <span class="person-index">13</span>
+          <h3>Bingqing Cheng</h3>
+          <p class="person-role">Assistant Professor of Chemistry</p>
+          <p class="person-affiliation">UC Berkeley</p>
+          <p class="person-direction">Machine-learning potentials, enhanced sampling, path-integral dynamics, free energies, and phase diagrams.</p>
+        </article>
+        <article class="person">
+          <span class="person-index">14</span>
+          <h3>Aaron Havens</h3>
+          <p class="person-role">Postdoctoral Researcher, FAIR Chemistry</p>
+          <p class="person-affiliation">Meta</p>
+          <p class="person-direction">Scalable generative sampling, reward-based fine-tuning, stochastic optimal control, and energy-trained diffusion.</p>
+        </article>
+        <article class="person">
+          <span class="person-index">15</span>
+          <h3>Benjamin Kurt Miller</h3>
+          <p class="person-role">Research Scientist, FAIR Chemistry</p>
+          <p class="person-affiliation">Meta</p>
+          <p class="person-direction">Probabilistic models, simulation-based inference, and generative modeling for molecules and materials.</p>
         </article>
       </div>
     </section>
@@ -211,11 +246,12 @@
           <h2 id="panel-title">How much scientific prior do we need in AI for science?</h2>
         </div>
         <ol class="panel-points">
-          <li><span>01</span><p><strong>The Bitter Lesson in small-data science.</strong> How should structure and scale trade off when scientific data remain scarce?</p></li>
-          <li><span>02</span><p><strong>First principles and experimental feedback.</strong> Can over-constraining models narrow the space of discovery?</p></li>
-          <li><span>03</span><p><strong>General models or scientific experts?</strong> Where do LLMs, specialist models, and domain algorithms each belong?</p></li>
+          <li><span>01</span><p><strong>Architecture.</strong> Which physical structures must be built in, and which can emerge through augmentation and scale?</p></li>
+          <li><span>02</span><p><strong>Training signal.</strong> When can energies, forces, and governing equations replace conventional labels?</p></li>
+          <li><span>03</span><p><strong>Experiment.</strong> How should models align with sparse, noisy, indirect, or conflicting measurements?</p></li>
         </ol>
       </div>
+      <p class="panel-note">Questions will be collected from participants in advance, with at least half of the session reserved for audience discussion.</p>
     </section>
 
     <section class="program section" id="schedule" aria-labelledby="schedule-title">
@@ -225,35 +261,61 @@
           <p class="status-label">Full-day workshop</p>
           <h2 id="schedule-title">A day built for exchange.</h2>
         </div>
-        <p>Six invited perspectives, five contributed talks, a focused panel, two poster sessions, and room for discussion across disciplinary boundaries.</p>
+        <p>Nine invited perspectives, six contributed talks, a focused panel, two poster sessions, and room for discussion across disciplinary boundaries. All times are local.</p>
       </div>
       <ol class="schedule-list">
-        <li><time>09:00-09:10</time><strong>Opening remarks</strong><span>Welcome and workshop framing</span></li>
-        <li><time>09:10-10:25</time><strong>Invited talks I</strong><span>Three talks, including Q&amp;A</span></li>
-        <li class="break"><time>10:25-10:55</time><strong>Break</strong><span>Morning coffee</span></li>
-        <li><time>10:55-12:10</time><strong>Invited talks II</strong><span>Three talks, including Q&amp;A</span></li>
-        <li class="break"><time>12:10-13:30</time><strong>Lunch break</strong><span>Midday interval</span></li>
-        <li><time>13:30-14:30</time><strong>Contributed talks</strong><span>Five selected presentations</span></li>
-        <li class="break"><time>14:30-15:00</time><strong>Break</strong><span>Afternoon coffee</span></li>
-        <li class="featured"><time>15:00-16:00</time><strong>Panel session</strong><span>How much scientific prior do we need in AI for science?</span></li>
-        <li><time>16:00-16:45</time><strong>Poster session I</strong><span>Contributed work and discussion</span></li>
-        <li><time>16:45-17:30</time><strong>Poster session II</strong><span>Contributed work and discussion</span></li>
-        <li><time>17:30-18:00</time><strong>Closing</strong><span>Takeaways and next steps</span></li>
+        <li><time>09:00-09:10</time><strong>Opening</strong><span>Physics-inspired AI for scientific discovery</span></li>
+        <li><time>09:10-10:40</time><strong>Invited talks 1-3</strong><span>25 minutes each, plus 5 minutes for questions</span></li>
+        <li class="break"><time>10:40-11:00</time><strong>Coffee break</strong><span>Informal exchange</span></li>
+        <li><time>11:00-12:30</time><strong>Invited talks 4-6</strong><span>25 minutes each, plus 5 minutes for questions</span></li>
+        <li><time>12:30-13:30</time><strong>Poster session I + lunch</strong><span>Contributed work and discussion</span></li>
+        <li><time>13:30-15:00</time><strong>Invited talks 7-9</strong><span>25 minutes each, plus 5 minutes for questions</span></li>
+        <li><time>15:00-16:00</time><strong>Contributed talks 1-6</strong><span>8 minutes each, plus 2 minutes for questions</span></li>
+        <li class="featured"><time>16:00-16:40</time><strong>Panel session</strong><span>How much scientific prior do we need in AI for science?</span></li>
+        <li><time>16:40-17:45</time><strong>Poster session II</strong><span>Contributed work and discussion</span></li>
+        <li><time>17:45-18:00</time><strong>Closing</strong><span>Open problems, candidate benchmarks, and next steps</span></li>
       </ol>
       <p class="schedule-note">Times and session details are tentative and may change.</p>
     </section>
 
+    <section class="cfp section" id="cfp" aria-labelledby="cfp-title">
+      <div class="section-kicker">05 / Call for papers</div>
+      <div class="cfp-heading">
+        <div>
+          <p class="status-label">Planned non-archival track</p>
+          <h2 id="cfp-title">Work in progress is welcome.</h2>
+        </div>
+        <p>Submissions will be double-blind through OpenReview using the ICLR 2027 template. All accepted papers will be presented as posters, with a balanced subset selected for contributed talks.</p>
+      </div>
+      <div class="cfp-layout">
+        <div class="cfp-tracks">
+          <article><span>01</span><h3>Full papers</h3><p>Up to 4 pages, excluding references and appendices, for ongoing or recently completed work.</p></article>
+          <article><span>02</span><h3>Tiny papers</h3><p>Up to 2 pages for focused ideas, modest results, re-analysis, benchmarks, datasets, negative results, or early experiment-alignment work.</p></article>
+          <p class="cfp-note">Submissions are non-archival. Tiny papers must be primarily human-authored. Previously published or accepted machine-learning conference papers, including the ICLR 2027 main track, are not eligible.</p>
+        </div>
+        <ol class="cfp-timeline">
+          <li><time>Dec 11, 2026</time><span>Call for papers and OpenReview site open</span></li>
+          <li><time>Jan 30, 2027</time><span>Submission deadline</span></li>
+          <li><time>Jan 31-Feb 15</time><span>Reviewing</span></li>
+          <li><time>Feb 22, 2027</time><span>Decisions sent to authors</span></li>
+          <li><time>Feb 26, 2027</time><span>Accepted papers public</span></li>
+          <li><time>Mar 20, 2027</time><span>Camera-ready papers, posters, and full program</span></li>
+        </ol>
+      </div>
+      <p class="schedule-note">All deadlines are 11:59 PM Anywhere on Earth.</p>
+    </section>
+
     <section class="organizers section" id="organizers" aria-labelledby="organizers-title">
       <div class="organizers-heading">
-        <div class="section-kicker light">05 / Organizers</div>
+        <div class="section-kicker light">06 / Organizers</div>
         <h2 id="organizers-title">Organizing team</h2>
       </div>
       <div class="organizer-grid">
         <article><h3>Mouyang Cheng</h3><p class="person-role">Ph.D. Candidate</p><p class="person-affiliation">MIT DMSE &amp; CCSE</p><p>Physics-guided generation, atomistic simulation, and disordered materials.</p></article>
         <article><h3>Denis Blessing</h3><p class="person-role">Ph.D. Candidate</p><p class="person-affiliation">Karlsruhe Institute of Technology</p><p>Probabilistic inference, diffusion and flow models, measure transport, and sampling.</p></article>
         <article><h3>Bushra Alam</h3><p class="person-role">Postdoctoral Fellow, Chemistry</p><p class="person-affiliation">Emory University</p><p>Excited-state electronic structure, TDDFT, spectroscopy, solvation, and redox chemistry.</p></article>
-        <article><h3>Manasa Kaniselvan</h3><p class="person-role">Postdoctoral Fellow</p><p class="person-affiliation">ETH Z&uuml;rich</p><p>Geometric deep learning, electronic structure, quantum transport, and scientific computing.</p></article>
-        <article><h3>Juno Nam</h3><p class="person-role">Ph.D. Candidate</p><p class="person-affiliation">MIT</p><p>Machine-learning interatomic potentials, free energies, enhanced sampling, and dynamics.</p></article>
+        <article><h3>Manasa Kaniselvan</h3><p class="person-role">Research Scientist</p><p class="person-affiliation">ETH Z&uuml;rich</p><p>Geometric deep learning, electronic structure, quantum transport, and scientific computing.</p></article>
+        <article><h3>Juno Nam</h3><p class="person-role">Ph.D. Candidate; Student Researcher</p><p class="person-affiliation">MIT &amp; Meta FAIR Chemistry</p><p>Machine-learning interatomic potentials, free energies, enhanced sampling, and dynamics.</p></article>
         <article><h3>Zhantao Chen</h3><p class="person-role">Assistant Professor, Mechanical Engineering</p><p class="person-affiliation">The University of Texas at Austin</p><p>AI and inverse methods, scattering, autonomous experiments, and agentic discovery.</p></article>
         <article><h3>Weiliang Luo</h3><p class="person-role">Ph.D. Candidate, Chemistry</p><p class="person-affiliation">MIT</p><p>Reactive ML potentials, enzymatic catalysis, automated quantum chemistry, and reaction generation.</p></article>
       </div>
@@ -261,9 +323,9 @@
 
     <section class="participate section" id="participate" aria-labelledby="participate-title">
       <div class="participate-mark" aria-hidden="true">Φ</div>
-      <p class="section-kicker light">06 / Join the conversation</p>
+      <p class="section-kicker light">07 / Join the conversation</p>
       <h2 id="participate-title">Help shape a more physical future for scientific AI.</h2>
-      <p>We are preparing the call for papers and final workshop program. Follow this page for updates as the proposal develops.</p>
+      <p>The proposed call for papers opens December 11, 2026. Follow this page for OpenReview links, accepted work, talk abstracts, and the final program.</p>
       <a class="primary-link" href="https://github.com/phisci27" target="_blank" rel="noreferrer">
         <span>Follow PhiSci on GitHub</span>
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
