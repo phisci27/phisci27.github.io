@@ -184,10 +184,18 @@ button { font: inherit; }
 .cfp-tracks h3 { margin: 24px 0 14px; font-size: 26px; }
 .cfp-tracks article p { margin: 0; line-height: 1.6; }
 .cfp-note { grid-column: 1 / -1; margin: 20px 0 0; padding-top: 24px; border-top: 1px solid rgba(17,17,17,.28); font-size: 12px; line-height: 1.65; }
-.cfp-timeline { list-style: none; margin: 0; padding: 0; border-top: 1px solid rgba(17,17,17,.35); }
-.cfp-timeline li { display: grid; grid-template-columns: 150px 1fr; gap: 24px; padding: 19px 0; border-bottom: 1px solid rgba(17,17,17,.28); }
-.cfp-timeline time { font: 500 11px/1.4 "DM Mono", monospace; }
-.cfp-timeline span { line-height: 1.45; }
+.cfp-dates { align-self: start; }
+.cfp-dates-heading { display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 18px; border-bottom: 1px solid var(--ink); }
+.cfp-dates-heading h3 { margin: 0; font-size: 26px; }
+.cfp-dates-heading span { font: 500 10px/1 "DM Mono", monospace; text-transform: uppercase; }
+.cfp-timeline { list-style: none; margin: 0; padding: 0; counter-reset: deadline; }
+.cfp-timeline li { position: relative; display: grid; grid-template-columns: 132px 1fr; gap: 28px; min-height: 84px; padding: 20px 0 20px 26px; border-bottom: 1px solid rgba(17,17,17,.28); counter-increment: deadline; }
+.cfp-timeline li::before { content: ""; position: absolute; left: 3px; top: 0; bottom: 0; width: 1px; background: rgba(17,17,17,.28); }
+.cfp-timeline li::after { content: counter(deadline, decimal-leading-zero); position: absolute; left: 0; top: 26px; width: 7px; height: 7px; border: 2px solid var(--ink); border-radius: 50%; background: var(--cyan); color: transparent; }
+.cfp-timeline time { display: flex; flex-direction: column; gap: 5px; font-family: "DM Mono", monospace; }
+.cfp-timeline time strong { font-size: 12px; line-height: 1.25; white-space: nowrap; }
+.cfp-timeline time span { font-size: 9px; line-height: 1; opacity: .58; }
+.cfp-timeline p { margin: 0; align-self: center; font-size: 17px; line-height: 1.35; }
 .cfp .schedule-note { color: rgba(17,17,17,.65); }
 
 .organizers { color: var(--white); background: #171717; }
@@ -266,7 +274,8 @@ button { font: inherit; }
   .schedule-list .featured { padding-left: 12px; }
   .cfp-tracks { grid-template-columns: 1fr; }
   .cfp-note { grid-column: 1; }
-  .cfp-timeline li { grid-template-columns: 1fr; gap: 8px; }
+  .cfp-timeline li { grid-template-columns: 112px 1fr; gap: 18px; padding-left: 22px; }
+  .cfp-timeline p { font-size: 15px; }
   .organizer-grid { grid-template-columns: 1fr; }
   .organizer-grid article, .organizer-grid article:nth-child(3n + 2), .organizer-grid article:nth-child(3n + 3), .organizer-grid article:nth-child(even) { min-height: auto; padding: 28px 0; border-right: 0; }
 }
