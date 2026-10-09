@@ -14,4 +14,4 @@ This repository is designed to publish from the root of the `main` branch with n
 2. In **Settings > Pages**, select **Deploy from a branch**.
 3. Select the `main` branch and `/ (root)` folder.
 
-Workshop dates, speaker names, organizers, and submission information are intentionally marked as forthcoming until confirmed.
+Content follows the ICLR 2027 workshop proposal. The workshop is proposed; the date, program, invited participants, and submission timeline are tentative, and the OpenReview link will be added when available.

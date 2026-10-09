@@ -1,26 +1,5 @@
-const header = document.querySelector('[data-header]');
-const menu = document.querySelector('[data-menu]');
-const nav = document.querySelector('[data-nav]');
 const canvas = document.querySelector('[data-science-canvas]');
-
-document.querySelector('[data-year]').textContent = new Date().getFullYear();
-
-const updateHeader = () => header.classList.toggle('scrolled', window.scrollY > 30);
-updateHeader();
-window.addEventListener('scroll', updateHeader, { passive: true });
-
-menu.addEventListener('click', () => {
-  const open = !nav.classList.contains('open');
-  nav.classList.toggle('open', open);
-  menu.setAttribute('aria-expanded', String(open));
-  document.body.style.overflow = open ? 'hidden' : '';
-});
-
-nav.querySelectorAll('a').forEach((link) => link.addEventListener('click', () => {
-  nav.classList.remove('open');
-  menu.setAttribute('aria-expanded', 'false');
-  document.body.style.overflow = '';
-}));
+const masthead = canvas.parentElement;
 
 const context = canvas.getContext('2d');
 const pointer = { x: -999, y: -999, active: false };
@@ -44,7 +23,7 @@ function resizeCanvas() {
 }
 
 function makeParticles() {
-  const count = Math.min(86, Math.max(34, Math.round(width / 17)));
+  const count = Math.min(86, Math.max(24, Math.round((width * height) / 9000)));
   particles = Array.from({ length: count }, (_, index) => ({
     x: Math.random() * width,
     y: Math.random() * height,
@@ -104,13 +83,13 @@ function draw(animate = true) {
   if (animate) requestAnimationFrame(draw);
 }
 
-canvas.addEventListener('pointermove', (event) => {
+masthead.addEventListener('pointermove', (event) => {
   const rect = canvas.getBoundingClientRect();
   pointer.x = event.clientX - rect.left;
   pointer.y = event.clientY - rect.top;
   pointer.active = true;
 });
-canvas.addEventListener('pointerleave', () => { pointer.active = false; });
+masthead.addEventListener('pointerleave', () => { pointer.active = false; });
 window.addEventListener('resize', resizeCanvas);
 
 resizeCanvas();

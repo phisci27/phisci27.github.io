@@ -3,344 +3,157 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="PhiSci 2027: a proposed ICLR workshop on physics-inspired AI for scientific discovery, from molecules to materials.">
+  <meta name="description" content="PhiSci 2027: a proposed ICLR 2027 workshop on physics-inspired AI for scientific discovery, from molecules to materials.">
   <meta name="theme-color" content="#111111">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://phisci27.github.io/">
+  <meta property="og:title" content="PhiSci 2027: Physics-Inspired AI for Scientific Discovery">
+  <meta property="og:description" content="Proposed ICLR 2027 workshop on where physical knowledge should enter learning, from molecules to materials.">
+  <meta name="twitter:card" content="summary">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23111111'/%3E%3Ctext x='16' y='23' text-anchor='middle' font-family='Arial,sans-serif' font-size='21' font-weight='700' fill='%23ff684d'%3E%CE%A6%3C/text%3E%3C/svg%3E">
   <title>PhiSci 2027 | Physics-Inspired AI for Scientific Discovery</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
 
-  <header class="site-header" data-header>
-    <a class="brand" href="#top" aria-label="PhiSci 2027 home">
-      <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
-      <span>PhiSci<span class="brand-year">/27</span></span>
-    </a>
-    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-menu>
-      <span></span><span></span>
-      <span class="sr-only">Toggle navigation</span>
-    </button>
-    <nav id="site-nav" class="site-nav" data-nav aria-label="Primary navigation">
-      <a href="#about">About</a>
-      <a href="#people">Speakers &amp; Panelists</a>
-      <a href="#panel">Panel</a>
-      <a href="#schedule">Schedule</a>
-      <a href="#organizers">Organizers</a>
-      <a class="nav-cta" href="#cfp">Call for papers</a>
-    </nav>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#top">PhiSci<span class="brand-year">/27</span></a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#speakers">Speakers</a>
+        <a href="#schedule">Schedule</a>
+        <a href="#cfp">Call for Papers</a>
+        <a href="#organizers">Organizers</a>
+      </nav>
+    </div>
   </header>
 
-  <main id="main">
-    <section class="hero" id="top" aria-labelledby="hero-title">
-      <canvas class="hero-canvas" data-science-canvas aria-hidden="true"></canvas>
-      <div class="hero-noise" aria-hidden="true"></div>
-      <div class="hero-content">
-        <p class="eyebrow"><span>Proposed ICLR 2027 Workshop</span><span>San Francisco, CA &bull; April 29/30, 2027</span></p>
-        <h1 id="hero-title">Physics-Inspired AI<br>for Scientific Discovery</h1>
-        <div class="hero-bottom">
-          <p class="hero-subtitle">As AI for molecules and materials scales, where should physical knowledge enter learning: in the architecture, as the training signal, or through experiment?</p>
-          <a class="round-link" href="#about" aria-label="Explore the workshop">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v16M5 13l7 7 7-7"/></svg>
-          </a>
-        </div>
-      </div>
-      <div class="hero-index" aria-hidden="true">Φ</div>
-    </section>
+  <div class="masthead" id="top">
+    <canvas class="masthead-canvas" data-science-canvas aria-hidden="true"></canvas>
+    <div class="masthead-noise" aria-hidden="true"></div>
+    <div class="wrap">
+      <p class="masthead-label">Proposed ICLR 2027 Workshop</p>
+      <h1>Physics-Inspired AI for Scientific Discovery: From Molecules to Materials</h1>
+      <p class="masthead-meta">San Francisco, CA <span>&middot;</span> April 29 or 30, 2027 (tentative)</p>
+    </div>
+  </div>
 
-    <section class="thesis section" id="about">
-      <div class="section-kicker">01 / The premise</div>
-      <div class="thesis-grid">
-        <h2>Where should physical knowledge <em>enter</em> learning?</h2>
-        <div class="thesis-copy">
-          <p>Foundation models are moving the bottleneck beyond static labels. What remains scarce are correct ensembles, rare events, accuracy beyond the underlying theory, and agreement with sparse or indirect measurements.</p>
-          <p>PhiSci asks how physical knowledge should shape representations, supply learning objectives, and connect scientific models to experimental ground truth.</p>
-        </div>
-      </div>
-      <div class="entry-points" aria-label="Three entry points for physical knowledge">
-        <span>1 / Architecture</span><span>2 / Training signal</span><span>3 / Experiment</span>
-      </div>
-    </section>
-
-    <section class="themes section" id="themes" aria-labelledby="themes-title">
-      <div class="section-heading">
-        <div class="section-kicker light">02 / Core questions</div>
-        <h2 id="themes-title">Three entry points.<br>One learning loop.</h2>
-      </div>
-      <div class="theme-list">
-        <article class="theme" data-theme>
-          <div class="theme-number">01</div>
-          <div class="theme-body">
-            <p class="theme-tag">Physics as architecture</p>
-            <h3>Which structure must be built in?</h3>
-            <p>When should symmetry, conservation, locality, and electronic structure be hard-coded, softly encouraged, or learned through augmentation and scale?</p>
-            <ul>
-              <li>Equivariance + symmetry</li>
-              <li>Energies + forces</li>
-              <li>Electronic Hamiltonians</li>
-            </ul>
-          </div>
-          <div class="theme-glyph glyph-orbit" aria-hidden="true"><i></i><i></i><i></i></div>
+  <main id="main" class="wrap">
+    <section id="about">
+      <h2>About</h2>
+      <p>Machine learning for molecules and materials has entered a foundation-model regime: generative models design crystals across the periodic table, universal interatomic potentials span molecules, materials, and interfaces, and large-scale transfer now reaches electronic Hamiltonians. What remains scarce is what a static label cannot provide: accuracy beyond the underlying theory, ensembles and rare events that must be sampled, and agreement with sparse, indirect experiments. A model can be accurate configuration by configuration yet produce the wrong ensemble, and an ensemble can be faithful to DFT yet disagree with measurement. PhiSci brings together machine learning, chemistry, physics, and materials science to ask <strong>where physical knowledge should enter learning</strong>:</p>
+      <div class="themes">
+        <article class="theme theme-1">
+          <h3><span class="num">1</span>Physics as architecture</h3>
+          <p class="q">Which physical structure should be built in, and which can be learned from data and scale?</p>
+          <ul class="topics"><li>Equivariance &amp; symmetry breaking</li><li>Conservative vs. direct forces</li><li>Built-in constraints vs. augmentation</li><li>Locality</li><li>Electronic Hamiltonians</li><li>Inductive biases at scale</li></ul>
         </article>
-        <article class="theme" data-theme>
-          <div class="theme-number">02</div>
-          <div class="theme-body">
-            <p class="theme-tag">Physics as training signal</p>
-            <h3>Learning from energies and equations</h3>
-            <p>Can generative models learn from energy functions, forces, and self-consistency conditions rather than labeled simulation data?</p>
-            <ul>
-              <li>Boltzmann sampling</li>
-              <li>Diffusion + control</li>
-              <li>Label-free objectives</li>
-            </ul>
-          </div>
-          <div class="theme-glyph glyph-wave" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+        <article class="theme theme-2">
+          <h3><span class="num">2</span>Physics as the training signal</h3>
+          <p class="q">When can energies and physical equations replace labeled data?</p>
+          <ul class="topics"><li>Boltzmann generators</li><li>Diffusion samplers</li><li>Stochastic optimal control</li><li>Energy-based rewards &amp; guidance</li><li>Rare events &amp; enhanced sampling</li><li>Free energies &amp; kinetics</li><li>Generative coarse-graining</li><li>Neural wavefunctions &amp; self-consistent DFT</li></ul>
         </article>
-        <article class="theme" data-theme>
-          <div class="theme-number">03</div>
-          <div class="theme-body">
-            <p class="theme-tag">Experiment as ground truth</p>
-            <h3>Aligning models with measurement</h3>
-            <p>How should models learn from sparse, noisy, indirect, or ensemble-averaged observables, especially when simulation and experiment disagree?</p>
-            <ul>
-              <li>Data fusion</li>
-              <li>Inverse problems</li>
-              <li>Physical validity</li>
-            </ul>
-          </div>
-          <div class="theme-glyph glyph-grid" aria-hidden="true"></div>
+        <article class="theme theme-3">
+          <h3><span class="num">3</span>Experiment as ground truth</h3>
+          <p class="q">How should models be aligned with, and evaluated against, real measurements?</p>
+          <ul class="topics"><li>Fine-tuning to experimental observables</li><li>Simulation&ndash;experiment data fusion</li><li>Generative priors for inverse problems</li><li>Diffraction, scattering &amp; spectroscopy</li><li>Learning from corrupted observations</li><li>Spectra, bands &amp; transport</li><li>Ensemble-level validity benchmarks</li></ul>
         </article>
       </div>
     </section>
 
-    <section class="statement section">
-      <p class="statement-label">The question behind PhiSci</p>
-      <blockquote>What should we build in, what should we optimize against, and what should scientific models align with?</blockquote>
+    <section id="speakers">
+      <h2>Invited Speakers &amp; Panelists <span class="status">Tentative</span></h2>
+      <div class="people">
+        <article class="person"><img src="https://people.csail.mit.edu/tommi/tommi.png" alt="" loading="lazy" referrerpolicy="no-referrer"><div><h3><a href="https://people.csail.mit.edu/tommi/" target="_blank" rel="noreferrer">Tommi Jaakkola</a></h3><p>MIT</p></div></article>
+        <article class="person"><img src="https://thechengroup.github.io/_astro/ji.chen.D5mtoHai_ZPDl1R.webp" alt="" loading="lazy" referrerpolicy="no-referrer"><div><h3><a href="https://faculty.pku.edu.cn/chenji/en/index.htm" target="_blank" rel="noreferrer">Ji Chen</a></h3><p>Peking University</p></div></article>
+        <article class="person"><img src="https://hjkgrp.mit.edu/author/heather-j.-kulik/avatar_hub42bf8af96ca4fa7749fc0bb445c78c4_25260_270x270_fill_lanczos_center_3.png" alt="" loading="lazy" referrerpolicy="no-referrer"><div><h3><a href="https://hjkgrp.mit.edu/" target="_blank" rel="noreferrer">Heather J. Kulik</a></h3><p>MIT</p></div></article>
+        <article class="person"><img src="https://seas.harvard.edu/sites/default/files/images/Directory/Kozinsky_200x300.jpg" alt="" loading="lazy" referrerpolicy="no-referrer"><div><h3><a href="https://seas.harvard.edu/person/boris-kozinsky" target="_blank" rel="noreferrer">Boris Kozinsky</a></h3><p>Harvard &amp; Bosch Research</p></div></article>
+        <article class="person"><img src="https://sungsoo-ahn.github.io/assets/img/prof_pic.jpg" alt="" loading="lazy" referrerpolicy="no-referrer"><div><h3><a href="https://sungsoo-ahn.github.io/" target="_blank" rel="noreferrer">Sungsoo Ahn</a></h3><p>KAIST</p></div></article>
+        <article class="person"><img src="https://txie.me/assets/img/profile.jpeg" alt="" loading="lazy" referrerpolicy="no-referrer"><div><h3><a href="https://txie.me/" target="_blank" rel="noreferrer">Tian Xie</a></h3><p>Project Prometheus</p></div></article>
+        <article class="person"><img src="https://sherrylixuecheng.github.io/images/academic_photo.jpg" alt="" loading="lazy" referrerpolicy="no-referrer"><div><h3><a href="https://sherrylixuecheng.github.io/" target="_blank" rel="noreferrer">Lixue (Sherry) Cheng</a></h3><p>HKUST</p></div></article>
+        <article class="person"><img src="https://a1k12.github.io/images/alvarez.png" alt="" loading="lazy" referrerpolicy="no-referrer"><div><h3><a href="https://a1k12.github.io/" target="_blank" rel="noreferrer">Aditi S. Krishnapriyan</a></h3><p>UC Berkeley &amp; LBNL</p></div></article>
+        <article class="person"><img src="https://hjkgrp.mit.edu/author/chenru-duan/avatar_hub36f43c0bb2eeaef5f409ab873694e0d_2721995_270x270_fill_q75_lanczos_center.jpg" alt="" loading="lazy" referrerpolicy="no-referrer"><div><h3><a href="https://hjkgrp.mit.edu/author/chenru-duan/" target="_blank" rel="noreferrer">Chenru Duan</a></h3><p>Deep Principle</p></div></article>
+        <article class="person"><img src="https://dmse.mit.edu/wp-content/uploads/2023/06/0003_Rafael-Gomez-Bombarelli_003-scaled-aspect-ratio-425-490-850x980-c-default.jpg" alt="" loading="lazy" referrerpolicy="no-referrer"><div><h3><a href="https://gomezbombarelli.mit.edu/" target="_blank" rel="noreferrer">Rafael G&oacute;mez-Bombarelli</a></h3><p>MIT &amp; Lila Sciences</p></div></article>
+        <article class="person"><img src="https://scholar.googleusercontent.com/citations?view_op=medium_photo&amp;user=jk7qwmcAAAAJ&amp;citpid=1" alt="" loading="lazy" referrerpolicy="no-referrer"><div><h3><a href="https://scholar.google.com/citations?user=jk7qwmcAAAAJ" target="_blank" rel="noreferrer">Linfeng Zhang</a></h3><p>DP Technology &amp; AISI Beijing</p></div></article>
+        <article class="person"><img src="https://www.epc.ed.tum.de/fileadmin/_processed_/2/2/csm_JulijaZavadlav2_a337afbaac.webp" alt="" loading="lazy" referrerpolicy="no-referrer"><div><h3><a href="https://www.epc.ed.tum.de/en/mfm/people/prof-dr-julija-zavadlav/" target="_blank" rel="noreferrer">Julija Zavadlav</a></h3><p>TU Munich</p></div></article>
+        <article class="person"><img src="https://chemistry.berkeley.edu/sites/default/files/bingqing-cheng-768x512.jpg" alt="" loading="lazy" referrerpolicy="no-referrer"><div><h3><a href="https://chemistry.berkeley.edu/people/bingqing-cheng" target="_blank" rel="noreferrer">Bingqing Cheng</a></h3><p>UC Berkeley</p></div></article>
+        <article class="person"><img src="https://aaronhavens.github.io/assets/img/profile_2.jpg" alt="" loading="lazy" referrerpolicy="no-referrer"><div><h3><a href="https://aaronhavens.github.io/" target="_blank" rel="noreferrer">Aaron Havens</a></h3><p>Meta FAIR Chemistry</p></div></article>
+        <article class="person"><img src="https://scholar.googleusercontent.com/citations?view_op=medium_photo&amp;user=IrCdg_wAAAAJ&amp;citpid=2" alt="" loading="lazy" referrerpolicy="no-referrer"><div><h3><a href="https://bkmi.github.io/" target="_blank" rel="noreferrer">Benjamin Kurt Miller</a></h3><p>Meta FAIR Chemistry</p></div></article>
+      </div>
     </section>
 
-    <section class="people section" id="people" aria-labelledby="people-title">
-      <div class="people-heading">
-        <div class="section-kicker">03 / People</div>
+    <section id="schedule">
+      <h2>Schedule <span class="status">Tentative</span></h2>
+      <table class="schedule">
+        <tbody>
+          <tr><td>09:00&ndash;09:10</td><td>Opening remarks</td></tr>
+          <tr><td>09:10&ndash;10:40</td><td>Invited talks 1&ndash;3</td></tr>
+          <tr><td>10:40&ndash;11:00</td><td>Coffee break</td></tr>
+          <tr><td>11:00&ndash;12:30</td><td>Invited talks 4&ndash;6</td></tr>
+          <tr><td>12:30&ndash;13:30</td><td>Poster session 1 and lunch</td></tr>
+          <tr><td>13:30&ndash;15:00</td><td>Invited talks 7&ndash;9</td></tr>
+          <tr><td>15:00&ndash;16:00</td><td>Contributed talks 1&ndash;6</td></tr>
+          <tr class="panel-row"><td>16:00&ndash;16:40</td><td>Panel: How much scientific prior do we need in AI for science?</td></tr>
+          <tr><td>16:40&ndash;17:45</td><td>Poster session 2</td></tr>
+          <tr><td>17:45&ndash;18:00</td><td>Closing: open problems and candidate benchmarks</td></tr>
+        </tbody>
+      </table>
+      <h3 class="sub">Panel: How much scientific prior do we need in AI for science?</h3>
+      <ul>
+        <li>Does the bitter lesson apply to science, or is scientific data fundamentally too scarce?</li>
+        <li>Do physics priors accelerate discovery, or impose a ceiling on what AI can discover?</li>
+        <li>When theory and experiment disagree, should AI trust the data over first principles?</li>
+        <li>Will general-purpose foundation models replace expert scientific models, or does domain knowledge remain indispensable?</li>
+      </ul>
+    </section>
+
+    <section id="cfp">
+      <h2>Call for Papers</h2>
+      <div class="cfp">
         <div>
-          <p class="status-label">Tentative</p>
-          <h2 id="people-title">Speakers &amp; Panelists</h2>
-          <p>Fifteen tentative invitees spanning foundational machine learning, electronic structure, atomistic simulation, generative sampling, experiment, and scientific discovery. Nine will give invited talks; several others will join the panel.</p>
+          <ul>
+            <li><strong>Full papers:</strong> up to 4 pages, excluding references and appendices.</li>
+            <li><strong>Tiny papers:</strong> up to 2 pages, excluding references. Negative results, sampler benchmarks, datasets of experimental observables, and early experiment-alignment results are welcome.</li>
+            <li>ICLR 2027 template, double-blind review on OpenReview (link TBA).</li>
+            <li>Non-archival. Papers already accepted at an ML conference, including the ICLR 2027 main track, are not eligible.</li>
+          </ul>
         </div>
+        <table class="dates">
+          <tbody>
+            <tr><td>Dec 11, 2026</td><td>Submissions open</td></tr>
+            <tr><td>Jan 30, 2027</td><td>Submission deadline</td></tr>
+            <tr><td>Feb 22, 2027</td><td>Decisions</td></tr>
+            <tr><td>Mar 20, 2027</td><td>Camera-ready</td></tr>
+          </tbody>
+        </table>
       </div>
-      <div class="people-grid">
-        <article class="person">
-          <span class="person-index">01</span>
-          <h3>Tommi Jaakkola</h3>
-          <p class="person-role">Thomas Siebel Professor of EECS and IDSS</p>
-          <p class="person-affiliation">MIT</p>
-          <p class="person-direction">Statistical inference, representation learning, molecular biology, and data-driven scientific discovery.</p>
-        </article>
-        <article class="person">
-          <span class="person-index">02</span>
-          <h3>Ji Chen</h3>
-          <p class="person-role">Associate Professor, School of Physics</p>
-          <p class="person-affiliation">Peking University</p>
-          <p class="person-direction">AI for electronic structure, quantum many-body systems, quantum Monte Carlo, and machine-learning force fields.</p>
-        </article>
-        <article class="person">
-          <span class="person-index">03</span>
-          <h3>Heather J. Kulik</h3>
-          <p class="person-role">Lammot du Pont Professor of Chemical Engineering; Professor of Chemistry</p>
-          <p class="person-affiliation">MIT</p>
-          <p class="person-direction">Machine learning and electronic structure for transition-metal chemistry, catalysis, and functional materials.</p>
-        </article>
-        <article class="person">
-          <span class="person-index">04</span>
-          <h3>Boris Kozinsky</h3>
-          <p class="person-role">Gordon McKay Professor; Professor of Chemistry and Chemical Biology; Principal Scientist</p>
-          <p class="person-affiliation">Harvard SEAS &amp; Bosch Research</p>
-          <p class="person-direction">Physics-informed atomistic modeling, interatomic potentials, active learning, transport, and phase transformations.</p>
-        </article>
-        <article class="person">
-          <span class="person-index">05</span>
-          <h3>Sungsoo Ahn</h3>
-          <p class="person-role">Assistant Professor, Kim Jaechul Graduate School of AI</p>
-          <p class="person-affiliation">KAIST</p>
-          <p class="person-direction">Probabilistic and generative learning, Hamiltonian prediction, flow matching, diffusion, and transition paths.</p>
-        </article>
-        <article class="person">
-          <span class="person-index">06</span>
-          <h3>Tian Xie</h3>
-          <p class="person-role">Founding Member of Technical Staff</p>
-          <p class="person-affiliation">Project Prometheus</p>
-          <p class="person-direction">Foundation and generative models for materials discovery, learned atomistic simulation, and experimentally validated design.</p>
-        </article>
-        <article class="person">
-          <span class="person-index">07</span>
-          <h3>Lixue (Sherry) Cheng</h3>
-          <p class="person-role">Assistant Professor of Chemistry and Chemical &amp; Biological Engineering</p>
-          <p class="person-affiliation">HKUST</p>
-          <p class="person-direction">Electronic structure, quantum chemistry and computing, and structured neural representations.</p>
-        </article>
-        <article class="person">
-          <span class="person-index">08</span>
-          <h3>Aditi S. Krishnapriyan</h3>
-          <p class="person-role">Assistant Professor; Faculty Scientist</p>
-          <p class="person-affiliation">UC Berkeley &amp; Lawrence Berkeley National Laboratory</p>
-          <p class="person-direction">Machine learning for natural science, atomistic simulation, generative modeling, distribution shift, and foundation models.</p>
-        </article>
-        <article class="person">
-          <span class="person-index">09</span>
-          <h3>Chenru Duan</h3>
-          <p class="person-role">Founder and Chief Technology Officer</p>
-          <p class="person-affiliation">Deep Principle</p>
-          <p class="person-direction">Computational chemistry and materials AI, transition states, equivariant generation, and autonomous discovery.</p>
-        </article>
-        <article class="person">
-          <span class="person-index">10</span>
-          <h3>Rafael G&oacute;mez-Bombarelli</h3>
-          <p class="person-role">Co-Founder and Chief Scientific Officer; Associate Professor of Materials Science and Engineering</p>
-          <p class="person-affiliation">Lila Sciences &amp; MIT</p>
-          <p class="person-direction">Generative models, atomistic simulation, statistical mechanics, free energies, and simulation-experiment integration.</p>
-        </article>
-        <article class="person">
-          <span class="person-index">11</span>
-          <h3>Linfeng Zhang</h3>
-          <p class="person-role">Founder &amp; Chief Scientist; Chairman</p>
-          <p class="person-affiliation">DP Technology &amp; AI for Science Institute, Beijing</p>
-          <p class="person-direction">Deep Potential, high-performance computing, and large-scale physically grounded atomistic simulation.</p>
-        </article>
-        <article class="person">
-          <span class="person-index">12</span>
-          <h3>Julija Zavadlav</h3>
-          <p class="person-role">Associate Professor of Multiscale Modeling of Fluid Materials</p>
-          <p class="person-affiliation">Technical University of Munich</p>
-          <p class="person-direction">Molecular simulation, multiscale learning, Bayesian inference, uncertainty, and simulation-experiment data fusion.</p>
-        </article>
-        <article class="person">
-          <span class="person-index">13</span>
-          <h3>Bingqing Cheng</h3>
-          <p class="person-role">Assistant Professor of Chemistry</p>
-          <p class="person-affiliation">UC Berkeley</p>
-          <p class="person-direction">Machine-learning potentials, enhanced sampling, path-integral dynamics, free energies, and phase diagrams.</p>
-        </article>
-        <article class="person">
-          <span class="person-index">14</span>
-          <h3>Aaron Havens</h3>
-          <p class="person-role">Postdoctoral Researcher, FAIR Chemistry</p>
-          <p class="person-affiliation">Meta</p>
-          <p class="person-direction">Scalable generative sampling, reward-based fine-tuning, stochastic optimal control, and energy-trained diffusion.</p>
-        </article>
-        <article class="person">
-          <span class="person-index">15</span>
-          <h3>Benjamin Kurt Miller</h3>
-          <p class="person-role">Research Scientist, FAIR Chemistry</p>
-          <p class="person-affiliation">Meta</p>
-          <p class="person-direction">Probabilistic models, simulation-based inference, and generative modeling for molecules and materials.</p>
-        </article>
-      </div>
+      <p class="small">All deadlines 11:59 PM AoE.</p>
+      <p class="reviewers"><strong>Interested in reviewing?</strong> Sign up through the <a href="https://docs.google.com/forms/d/e/1FAIpQLSd-Y7MSjMCV7pUn9HCFXCoHvzyiEuY35fyX-9cr8nJD0cS2ZQ/viewform" target="_blank" rel="noreferrer">reviewer intake form</a>.</p>
     </section>
 
-    <section class="panel-focus section" id="panel" aria-labelledby="panel-title">
-      <div class="section-kicker light">Panel theme</div>
-      <div class="panel-layout">
-        <div>
-          <p class="status-label light">Tentative</p>
-          <h2 id="panel-title">How much scientific prior do we need in AI for science?</h2>
-        </div>
-        <ol class="panel-points">
-          <li><span>01</span><p>Does the bitter lesson apply to science, or is scientific data fundamentally too scarce?</p></li>
-          <li><span>02</span><p>Do physics priors accelerate discovery, or impose a ceiling on what AI can discover?</p></li>
-          <li><span>03</span><p>When theory and experiment disagree, should AI trust the data over first principles?</p></li>
-          <li><span>04</span><p>Will general-purpose foundation models replace expert scientific models, or does domain knowledge remain indispensable?</p></li>
-        </ol>
+    <section id="organizers">
+      <h2>Organizers</h2>
+      <div class="people">
+        <article class="person"><img src="https://qm.mit.edu/wp-content/uploads/2017/07/Cheng_2024.jpg" alt="" loading="lazy" referrerpolicy="no-referrer"><div><h3><a href="https://cse.mit.edu/people/mouyang-cheng/" target="_blank" rel="noreferrer">Mouyang Cheng</a></h3><p>MIT</p></div></article>
+        <article class="person"><img src="https://bpb-us-e1.wpmucdn.com/sites.mit.edu/dist/c/892/files/2023/09/Juno_Nam.jpg" alt="" loading="lazy" referrerpolicy="no-referrer"><div><h3><a href="https://gomezbombarelli.mit.edu/juno-nam/" target="_blank" rel="noreferrer">Juno Nam</a></h3><p>MIT</p></div></article>
+        <article class="person"><img src="https://alr.iar.kit.edu/img/TeamImages/profile_pic_rdax_230x263s.jpg" alt="" loading="lazy" referrerpolicy="no-referrer"><div><h3><a href="https://alr.iar.kit.edu/21_495.php" target="_blank" rel="noreferrer">Denis Blessing</a></h3><p>KIT</p></div></article>
+        <article class="person"><img src="https://flgroup.emorychem.science/wp-content/uploads/2024/03/Bushra_Image.jpg" alt="" loading="lazy" referrerpolicy="no-referrer"><div><h3><a href="https://flgroup.emorychem.science/people/" target="_blank" rel="noreferrer">Bushra Alam</a></h3><p>Emory University</p></div></article>
+        <article class="person"><img src="https://scholar.googleusercontent.com/citations?view_op=medium_photo&amp;user=P9tIuy4AAAAJ&amp;citpid=1" alt="" loading="lazy" referrerpolicy="no-referrer"><div><h3><a href="https://manasakani.github.io/" target="_blank" rel="noreferrer">Manasa Kaniselvan</a></h3><p>ETH Z&uuml;rich</p></div></article>
+        <article class="person"><img src="https://me.utexas.edu/wp-content/uploads/faculty/Zhantao-Chen-2025.png" alt="" loading="lazy" referrerpolicy="no-referrer"><div><h3><a href="https://me.utexas.edu/person/zhantao-chen/" target="_blank" rel="noreferrer">Zhantao Chen</a></h3><p>UT Austin</p></div></article>
+        <article class="person"><img src="https://hjkgrp.mit.edu/author/weiliang-luo/avatar_hu58a7dab829a9efd59af5841a78e37f12_95852_270x270_fill_q75_lanczos_center.jpg" alt="" loading="lazy" referrerpolicy="no-referrer"><div><h3><a href="https://hjkgrp.mit.edu/author/weiliang-luo/" target="_blank" rel="noreferrer">Weiliang Luo</a></h3><p>MIT</p></div></article>
       </div>
-      <p class="panel-note">Questions will be collected from participants in advance, with at least half of the session reserved for audience discussion.</p>
-    </section>
-
-    <section class="program section" id="schedule" aria-labelledby="schedule-title">
-      <div class="section-kicker">04 / Tentative schedule</div>
-      <div class="schedule-heading">
-        <div>
-          <p class="status-label">Full-day workshop</p>
-          <h2 id="schedule-title">A day built for exchange.</h2>
-        </div>
-        <p>Nine invited perspectives, six contributed talks, a focused panel, two poster sessions, and room for discussion across disciplinary boundaries. All times are local.</p>
-      </div>
-      <ol class="schedule-list">
-        <li><time>09:00-09:10</time><strong>Opening</strong><span>Physics-inspired AI for scientific discovery</span></li>
-        <li><time>09:10-10:40</time><strong>Invited talks 1-3</strong><span>25 minutes each, plus 5 minutes for questions</span></li>
-        <li class="break"><time>10:40-11:00</time><strong>Coffee break</strong><span>Informal exchange</span></li>
-        <li><time>11:00-12:30</time><strong>Invited talks 4-6</strong><span>25 minutes each, plus 5 minutes for questions</span></li>
-        <li><time>12:30-13:30</time><strong>Poster session I + lunch</strong><span>Contributed work and discussion</span></li>
-        <li><time>13:30-15:00</time><strong>Invited talks 7-9</strong><span>25 minutes each, plus 5 minutes for questions</span></li>
-        <li><time>15:00-16:00</time><strong>Contributed talks 1-6</strong><span>8 minutes each, plus 2 minutes for questions</span></li>
-        <li class="featured"><time>16:00-16:40</time><strong>Panel session</strong><span>How much scientific prior do we need in AI for science?</span></li>
-        <li><time>16:40-17:45</time><strong>Poster session II</strong><span>Contributed work and discussion</span></li>
-        <li><time>17:45-18:00</time><strong>Closing</strong><span>Open problems, candidate benchmarks, and next steps</span></li>
-      </ol>
-      <p class="schedule-note">Times and session details are tentative and may change.</p>
-    </section>
-
-    <section class="cfp section" id="cfp" aria-labelledby="cfp-title">
-      <div class="section-kicker">05 / Call for papers</div>
-      <div class="cfp-heading">
-        <div>
-          <p class="status-label">Planned non-archival track</p>
-          <h2 id="cfp-title">Work in progress is welcome.</h2>
-        </div>
-        <p>Submissions will be double-blind through OpenReview using the ICLR 2027 template. All accepted papers will be presented as posters, with a balanced subset selected for contributed talks.</p>
-      </div>
-      <div class="cfp-layout">
-        <div class="cfp-tracks">
-          <article><span>01</span><h3>Full papers</h3><p>Up to 4 pages, excluding references and appendices, for ongoing or recently completed work.</p></article>
-          <article><span>02</span><h3>Tiny papers</h3><p>Up to 2 pages for focused ideas, modest results, re-analysis, benchmarks, datasets, negative results, or early experiment-alignment work.</p></article>
-          <p class="cfp-note">Submissions are non-archival. Tiny papers must be primarily human-authored. Previously published or accepted machine-learning conference papers, including the ICLR 2027 main track, are not eligible.</p>
-        </div>
-        <div class="cfp-dates">
-          <div class="cfp-dates-heading"><h3>Key dates</h3><span>2026-27</span></div>
-          <ol class="cfp-timeline">
-            <li><time datetime="2026-12-11"><strong>Dec 11</strong><span>2026</span></time><p>Call for papers and OpenReview site open</p></li>
-            <li><time datetime="2027-01-30"><strong>Jan 30</strong><span>2027</span></time><p>Submission deadline</p></li>
-            <li><time><strong>Jan 31-Feb 15</strong><span>2027</span></time><p>Reviewing</p></li>
-            <li><time datetime="2027-02-22"><strong>Feb 22</strong><span>2027</span></time><p>Decisions sent to authors</p></li>
-            <li><time datetime="2027-02-26"><strong>Feb 26</strong><span>2027</span></time><p>Accepted papers public</p></li>
-            <li><time datetime="2027-03-20"><strong>Mar 20</strong><span>2027</span></time><p>Camera-ready papers, posters, and full program</p></li>
-          </ol>
-        </div>
-      </div>
-      <p class="schedule-note">All deadlines are 11:59 PM Anywhere on Earth.</p>
-    </section>
-
-    <section class="organizers section" id="organizers" aria-labelledby="organizers-title">
-      <div class="organizers-heading">
-        <div class="section-kicker light">06 / Organizers</div>
-        <h2 id="organizers-title">Organizing team</h2>
-      </div>
-      <div class="organizer-grid">
-        <article><h3>Mouyang Cheng</h3><p class="person-role">Ph.D. Candidate</p><p class="person-affiliation">MIT DMSE &amp; CCSE</p><p>Physics-guided generation, atomistic simulation, and disordered materials.</p></article>
-        <article><h3>Denis Blessing</h3><p class="person-role">Ph.D. Candidate</p><p class="person-affiliation">Karlsruhe Institute of Technology</p><p>Probabilistic inference, diffusion and flow models, measure transport, and sampling.</p></article>
-        <article><h3>Bushra Alam</h3><p class="person-role">Postdoctoral Fellow, Chemistry</p><p class="person-affiliation">Emory University</p><p>Excited-state electronic structure, TDDFT, spectroscopy, solvation, and redox chemistry.</p></article>
-        <article><h3>Manasa Kaniselvan</h3><p class="person-role">Research Scientist</p><p class="person-affiliation">ETH Z&uuml;rich</p><p>Geometric deep learning, electronic structure, quantum transport, and scientific computing.</p></article>
-        <article><h3>Juno Nam</h3><p class="person-role">Ph.D. Candidate; Student Researcher</p><p class="person-affiliation">MIT &amp; Meta FAIR Chemistry</p><p>Machine-learning interatomic potentials, free energies, enhanced sampling, and dynamics.</p></article>
-        <article><h3>Zhantao Chen</h3><p class="person-role">Assistant Professor, Mechanical Engineering</p><p class="person-affiliation">The University of Texas at Austin</p><p>AI and inverse methods, scattering, autonomous experiments, and agentic discovery.</p></article>
-        <article><h3>Weiliang Luo</h3><p class="person-role">Ph.D. Candidate, Chemistry</p><p class="person-affiliation">MIT</p><p>Reactive ML potentials, enzymatic catalysis, automated quantum chemistry, and reaction generation.</p></article>
-      </div>
-    </section>
-
-    <section class="participate section" id="participate" aria-labelledby="participate-title">
-      <div class="participate-mark" aria-hidden="true">Φ</div>
-      <p class="section-kicker light">07 / Join the conversation</p>
-      <h2 id="participate-title">Help shape a more physical future for scientific AI.</h2>
-      <p>The proposed call for papers opens December 11, 2026. Follow this page for OpenReview links, accepted work, talk abstracts, and the final program.</p>
-      <a class="primary-link" href="https://github.com/phisci27" target="_blank" rel="noreferrer">
-        <span>Follow PhiSci on GitHub</span>
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-      </a>
     </section>
   </main>
 
   <footer class="site-footer">
-    <a class="brand footer-brand" href="#top"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span><span>PhiSci<span class="brand-year">/27</span></span></a>
-    <p>Physics-Inspired AI for Scientific Discovery<br>From Molecules to Materials</p>
-    <p class="footer-meta">Proposed ICLR 2027 Workshop<br><span data-year></span> PhiSci</p>
+    <div class="wrap">
+      <p>PhiSci 2027 &middot; <a href="https://github.com/phisci27" target="_blank" rel="noreferrer">GitHub</a></p>
+    </div>
   </footer>
 
   <script src="script.js"></script>
